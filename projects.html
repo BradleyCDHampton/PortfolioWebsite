@@ -7,10 +7,8 @@
         <link href="css/cyber.css" rel="stylesheet">
         <title>Projects - Bradley Hampton</title>
         <script defer src="js/collapsible_section.js"></script>
-
     </head>
     
-
     <header>
         <h1 class="website-banner-title">Bradley Hampton - Software Engineer</h1>
     </header>
@@ -28,12 +26,24 @@
         <!-- Change List to some sort of Dropdown Blocks?-->
         
         <!--RoleCall-->
-        <button class="collapsible" type="button">RoleCall</button>
+        <button class="collapsible" type="button">
+            <span>RoleCall</span>
+            <span class="right-aligned-plus">+</span>
+        </button>
         <div class="collapsible-content">
             
-            <h2>Source Code</h2>
-                <a href="https://github.com/WyattCake1/CS411Silver">Github</a>
-                <a href="https://wyattcake1.github.io/CS411Silver/">Project Website</a>
+            <h2>Overview</h2>
+
+                <p>A prototype for an Android Mobile application, which matches and connects Gamemasters and Players
+                    together based on their preferences for a TTRPG Campaign.
+                </p>
+
+            <h2>Links</h2>
+
+                <ul>
+                    <li><a href="https://github.com/WyattCake1/CS411Silver">Github</a> - full source code</li>
+                    <li><a href="https://wyattcake1.github.io/CS411Silver/">Project Website</a> - additional documentation and resources</li>
+                </ul>
 
             <h2>Technologies Used</h2>
                 <ul>
@@ -42,42 +52,66 @@
                     <li>Python (Flask)</li>
                     <li>MySQL</li>
                     <li>Docker</li>
+                    <li>Jira</li>
                 </ul>
 
-            <h2>Motiviation</h2>
+            <h2>Motivation</h2>
 
-                <p>Justification for why this project exists...</p>
+                <p>Finding and organizing groups for TTRPGs poses a logistical challenge. A campaign requires consistent
+                    commitment and coordination from all group members. Players and GMs must all align on:</p>
+                
+                <ul>
+                    <li>what game they will play</li>
+                    <li>where they will meet</li>
+                    <li>when sessions will take place</li>
+                    <li>how difficult the Campaign will be</li>
+                    <li>what roles each character will play as</li>
+                </ul>
+                
+                <p>A mismatch in player expectations or preferences causes friction and could terminate a Campaign. GMs must
+                    carefully consider whether each potential Player fits the Campaign they intend to run. TTRPG players
+                    traditionally find groups to play with in-person or using online forums. These methods are inefficient
+                    and time-consuming.</p>
 
-            <h2>Takeaways</h2>
+            <h2>Achievements</h2>
 
                 <ul>
-                    <li>Connected front-end and back-end.</li>
-                    <li>Item 2</li>
+                    <li>Organized a Jira taskboard to divide work between Sprints and team members following AGILE methodology</li>
+                    <li>Connected the front-end and back-end via Flask routes within a Docker containerized environment.</li>
+                    <li>Created entity-relationship diagrams to derive the MySQL database schema used throughout the Project.</li>
+                    <li>Designed and implemented a text-based chatroom to enable group members to communicate after matching.</li>
                 </ul>
         </div>
 
+        <!--PROJECT_DROPDOWN-->
         <button class="collapsible" type="button">TBA</button>
         <div class="collapsible-content">
-            <h2>Source Code</h2>
-                <a href="">Download</a>
+
+            <h2>Overview</h2>
+
+                <a>A high-level description of the Project</a>
+
+            <h2>Links</h2>
+                
+                <ul>
+                    <li>Any download links to source code/reference materials, etc.</li>
+                </ul>
 
             <h2>Technologies Used</h2>
                 <ul>
-                    <li>n/a</li>
+                    <li>a list of all in-demand languages/frameworks used</li>
                 </ul>
 
-            <h2>Motiviation</h2>
+            <h2>Motivation</h2>
 
-                <p>Website is a WIP</p>
+                <p>Some justification on why this Project is useful/relevant.</p>
 
-            <h2>Takeaways</h2>
+            <h2>Achievements</h2>
 
                 <ul>
-                    <li>Item 1.</li>
-                    <li>Item 2</li>
+                    <li>Any notable contributions to the Project.</li>
+                    <li>That signifiy some learned or strengthened experience.</li>
                 </ul>
-            <!--Note about tech-stack or technologies used-->
-            <!--Takeaways? Blog post?-->
         </div>
 
     </body>

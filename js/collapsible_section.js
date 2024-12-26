@@ -1,18 +1,22 @@
-var coll = document.getElementsByClassName("collapsible");
-var i;
+var collapsible_buttons = document.getElementsByClassName("collapsible");
 
-console.log(coll.length);
-console.log("loaded");
+for (var i = 0; i < collapsible_buttons.length; i++) {
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+  collapsible_buttons[i].addEventListener("click", function() {
+
     this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    console.log("Button pressed!");
-    if (content.style.display === "block") {
-      content.style.display = "none";
+    var collapsible = this.nextElementSibling;
+    var icon = this.querySelector('.right-aligned-plus');
+
+    //console.log("Button pressed!");
+    if (collapsible.style.display === "block") {
+
+      collapsible.style.display = "none";
+      icon.innerHTML="+";  
+
     } else {
-      content.style.display = "block";
+      collapsible.style.display = "block";
+      icon.innerHTML="-";
     }
   });
 }

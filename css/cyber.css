@@ -1,10 +1,13 @@
 
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-
 }
 
+.website-banner{
+    background-color: rosybrown;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
 .website-banner-title {
     text-align: center;
@@ -12,6 +15,7 @@ body {
 }
 
 .topbar {
+    background-color:rgb(155, 69, 69);
     text-align: right;
     font-size: 16px;
     font-weight: bold;
@@ -27,6 +31,12 @@ body {
     width: 100%;
     height: 1cm
 }
+
+.right-aligned-plus {
+    float: right;
+    margin-right: 10px;
+}
+
 
 .active-page, .collapsible:hover {
 
