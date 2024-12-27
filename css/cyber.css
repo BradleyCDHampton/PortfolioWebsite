@@ -40,6 +40,9 @@ body a:visited {
     text-align: right;
     font-size: 16px;
     font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
 }
 
 .topbar a:any-link {
@@ -49,6 +52,28 @@ body a:visited {
 
 .topbar .active-page:any-link, .collapsible:hover {
     color: var(--accent3);
+}
+
+
+
+
+.block, .block-header {
+    
+    margin: auto;
+    width: 80%;
+    background-color: var(--main-text-color);
+    color: var(--main-background-color);
+    text-align: center;
+    border: 5px solid var(--accent1);
+}
+
+.block {
+    padding-block: 5%;
+}
+
+.block-header{
+    background-color: var(--accent1);
+    margin-top: 1%;
 }
 
 .collapsible {
@@ -77,5 +102,9 @@ body a:visited {
 
 .collapsible-content a:link {
     color: var(--hyperlink_unvisited);
+}
 
+.headshot {
+    width: 400;
+    height: 400;
 }
