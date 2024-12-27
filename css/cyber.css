@@ -92,6 +92,7 @@ body a:visited {
     background-image: var(--gradient1);
     background-color: var(--accent2);
     text-align: center;
+    overflow-x: clip;
     color: var(--main-text-color);
     font-size: 18px;
     font-weight: bold;
