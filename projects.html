@@ -137,7 +137,9 @@
 
             <h2>Overview</h2>
 
-                <a>A high-level description of the Project</a>
+                <a>A game of Reversi where input is recieved via a Graphical UI, and the computer-controlled opponent's moves are 
+                    determined by configuring how the computer evaluates the game-state and how far it should look-ahead.
+                </a>
 
             <h2>Links</h2>
                 
@@ -148,22 +150,34 @@
 
             <h2>Technologies Used</h2>
                 <ul>
-                    <li>Python (Tkinter)</li>
+                    <li>Python (tkinter, argparse)</li>
                 </ul>
 
             <h2>Motivation</h2>
 
-                <p>Some justification on why this Project is useful/relevant</p>
+                <ul>
+                    <li>To create an AI opponent, which is able to defeat an intermediate-level player in Reversi, while making its
+                        in roughly less than 30 seconds per move.</li>
+                    <li>Investigate the relative performances of min-max search and alpha-beta pruning when applied to different
+                        heuristic functions.
+                    </li>
+                </ul>
 
             <h2>Achievements</h2>
 
                 <ul>
-                    <li>Any notable contributions to the Project.</li>
-                    <li>That signifiy some learned or strengthened experience</li>
+                    <li>Explored multithreaded control flow through creating a graphical UI using Python's Tkinter package.</li>
+                    <li>Applied k-fold alpha-beta lookahead creating computer-controlled opponents at an advanced skill level.</li>
+                    <li>Implemented 3 distinct heuristic functions (documented in the report).</li>
+                    <li>Created command-line arguments enabling the algorithm, heuristic, and depth of look-ahead to be selected
+                        when the program is run.</li>
                 </ul>
         </div>
 
-        <!--PROJECT_DROPDOWN-->
+        <!--
+
+        PROJECT_DROPDOWN
+
         <button class="collapsible" type="button">
             <span>TBA</span>
             <span class="right-aligned-plus">+</span>
@@ -196,6 +210,7 @@
                     <li>That signifiy some learned or strengthened experience</li>
                 </ul>
         </div>
+        -->
 
     </body>
 
