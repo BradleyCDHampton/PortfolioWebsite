@@ -1,10 +1,31 @@
 
-body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+:root {
+    --main-background-color: #161925;
+    --main-text-color: #EBE9E9;
+    --accent1: #73937E;
+    --accent2: #BC69AA;
+    --accent3: #0BF0F4;
+    --hyperlink_unvisited: #6D00C7
 }
 
+
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+}
+
+body a:link {
+    color: var(--accent3);
+}
+
+body a:visited {
+    color: var(--accent1);
+}
+
+
 .website-banner{
-    background-color: rosybrown;
+    background-color: var(--accent2);
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -14,18 +35,27 @@ body {
     font-size: 60;
 }
 
-.topbar {
-    background-color:rgb(155, 69, 69);
+.topbar { 
+    background-color: var(--accent2);
     text-align: right;
     font-size: 16px;
     font-weight: bold;
 }
 
+.topbar a:any-link {
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+.topbar .active-page:any-link, .collapsible:hover {
+    color: var(--accent3);
+}
+
 .collapsible {
 
-    background-color: rgb(144, 55, 55);
+    background-color: var(--accent2);
     text-align: center;
-    color: white;
+    color: var(--main-text-color);
     font-size: 18px;
     font-weight: bold;
     width: 100%;
@@ -37,16 +67,15 @@ body {
     margin-right: 10px;
 }
 
-
-.active-page, .collapsible:hover {
-
-    color: red;
-
-}
-
 .collapsible-content {
     padding: 0 18px;
     display: none;
     overflow: hidden;
-    background-color: #bfa1a1;
+    color: var(--main-background-color);
+    background-color: var(--main-text-color);
   }
+
+.collapsible-content a:link {
+    color: var(--hyperlink_unvisited);
+
+}
